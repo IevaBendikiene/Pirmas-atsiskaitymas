@@ -1,0 +1,630 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0 auto;
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-size: 20px;
+}
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.flex-container{
+    display: flex;
+}
+.iner-container-grid{
+    display: grid;
+    padding: 0 134px 100px 134px;
+}
+h2{
+    font-family: 'Sigmar One', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 400;
+    line-height: 57.6px; /* 120% */
+}
+section.about-us h2, section.blog h2{
+    color:#164780;
+}
+section.products, section.coments{
+    background-color: #164780;
+}
+section.about-us, section.blog{
+    background-color: #FCF6DE;
+
+}
+
+/*header styling*/
+.top-header , header{
+    background-color: #F95738;
+}
+.top-header .container{
+    justify-content: space-between;
+    align-items: center;
+    height:88px;
+    padding: 16px 0;
+}
+.top-header .logo{
+    align-items: center;
+}
+.top-header .logo .icon{
+    width:56px;
+    height:56px;
+    border:2px solid white;
+    border-radius: 50%;
+    color:white;
+    margin-right: 15px;
+}
+.top-header .logo p{
+    color: #FFF;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 24px;
+    max-width: 137px;
+}
+.top-header .logo p span{
+    font-size: 0.75rem;
+}
+.top-header nav ul li{
+   list-style: none;
+   justify-content: space-between;
+   
+}
+.top-header nav ul li a{
+    color: #FFF;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 120% */
+    text-decoration: none;
+    margin-left: 36px;
+    text-transform: capitalize;
+}
+.top-header nav ul li a:hover,
+.top-header nav ul li a:focus,
+.top-header nav ul li a:active{
+    color:#EFBE10;
+    border-bottom: 3px solid #EFBE10;
+}
+.mobile{
+    display: none;
+}
+
+/*header*/
+header {
+    position: relative;
+    height: 800px;
+    margin: 0;
+}
+header #right-half{
+    background: url("../img/heading.png") ;
+    width: 50%;
+    position: absolute;
+    right: 0px;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+header .container{
+    position: relative;
+}
+header h1{
+    position: absolute;
+    margin:0;
+    top: 145px;
+    left: 0;
+    text-align: left;
+    color: #FFF;
+    font-family: 'Sigmar One', sans-serif;
+    font-size: 6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 85%; /* 102px */
+    max-width: 800px;
+    }
+header h1 span{
+    color:#EFBE10
+}
+
+/* galerija*/
+.galery .container{
+    position: relative;
+}
+#blue-ice-cream{
+    position: absolute;
+    height: 400px;
+    width:334px;
+    left: -110px;;
+    bottom: 0;
+}
+.galery .iner-container-grid {
+   max-width: 100%;
+   grid-gap: 16px;
+   grid-template-columns: repeat(3, 1fr);
+   grid-auto-rows: auto;
+   grid-auto-flow: dense;
+}
+
+.galery .img-small{
+    grid-row: span 3;
+}
+.galery .img-big{
+    grid-row: span 5;
+}
+.galery .img-extra-small{
+    grid-row: span 2;
+}
+.galery h2 {
+    
+    padding: 100px 0 50px 134px;
+    margin:0;
+
+}
+/*product section*/
+
+.products h2{
+    color:#EFBE10;
+    padding: 100px 0 60px 134px;
+    margin:0;
+}
+.products .container {
+    padding-bottom: 100px;
+}
+.products .ice-creams{
+    justify-content: space-between;
+    align-items: center;
+}
+.direction-sign{
+    width:80px;
+    height: 80px;
+    margin: 28px;
+}
+.ice-cream-box{
+    border-radius: 40px;
+    background-color: white;
+    text-align: center;
+    margin: 0 17px;
+    width: 334px;   
+}
+.ice-cream-box img{
+    width:100%;
+    margin: 0 0 30px;
+    border-radius: 40px 40px 0 0;
+}
+.ice-cream-box h3{
+    color: #000;
+    font-family:'Sigmar One', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 24px; /* 100% */
+    font-variant: all-small-caps;
+    letter-spacing: 0.96px;
+    margin: 0 32px;
+    max-width: 210px;
+}
+.ice-cream-box hr{
+    margin: 16px auto;
+    border-bottom: 3px solid black;
+    width: 23px;
+}
+.ice-cream-box p{
+    color: #000;
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 0.54px;
+    margin: 0 32px;
+}
+.ice-cream-box .btn-read{
+    background-color: white;
+    color: #164780;
+    text-align: center;
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    line-height: normal;
+    font-variant: all-small-caps;
+    border-radius:8px;
+    border: 2px solid #164780;
+    margin: 32px;
+    padding: 6px 20px;
+}
+/* about us */
+.about-us .container{
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 100px 20px 68px;
+}
+#chocolate-cone{
+    position: absolute;
+    width:200px;
+    height:350px;
+    top: -140px;
+    right: -110px;
+}
+.about-us-text p{
+    color: #000;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 41.6px; /* 130% */
+    letter-spacing: -1.6px;
+    max-width: 585px;
+}
+#people-img{
+    border-radius: 40px;
+    max-width: 511px;
+    margin:0 5px 0 0;
+}
+/*coments section*/
+.coments .container{
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 105px 0;
+}
+
+#happy-girl{
+    position: absolute;
+    right: -100px;
+    top:30px;
+    width:200px;
+    height: 500px;
+}
+
+.coments .coment-box{
+    background-color:#1A5498;
+    padding:40px; 
+    height: 400px;
+    margin: 0 30px;
+    border-radius: 20px;
+    position: relative;
+    width:320px;
+}  
+.coments .coment-box img{
+    width:50px;
+    height: 50px;
+    border: none;
+    margin: 0 0 40px;
+}
+.coments .coment-box p{
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 30px; 
+    letter-spacing: -0.5px;
+}
+.coments .coment-box p.avatar-name{
+    font-size: 0.7rem;
+    font-weight: 500;
+    line-height: 21px;
+    position: absolute;
+    margin: 0;
+    bottom: 40px;
+}
+
+/*blog section*/
+
+.blog .container{
+    position: relative;
+    padding: 100px 160px;
+}
+.blog .container #pink-cone{
+    position: absolute;
+    left: -110px;
+    width: 360px;
+    height: 725px;
+    top: 20px;
+}
+.blog .container .blog-main-part{
+ margin:0;
+ z-index: 999;
+ position:relative;
+}
+.blog .container .blog-main-part p{
+    max-width:480px;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 30px; 
+}
+.blog .container .blog-story-box{
+    margin: 40px 10px 0 0;
+    border-radius:12px;
+    position: relative;
+    background-color: white;
+}
+.blog .container .blog-story-box P{
+    color:  #121212;
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 24px; 
+    max-width: 209px;
+    margin: 16px;
+}
+.blog .container .blog-story-box img{
+    border-radius:12px 12px 0 0;
+}
+.blog .container .blog-story-box .bookmark{
+    border-radius: 50%;
+    width: 32px;
+    height:32px;
+    padding:8px;
+    background-color: white;
+    box-shadow: 1px 1px 5px grey;
+    border: none;
+    position: absolute;
+    bottom: 90px;
+    right: 24px;
+}
+.blog .container .blog-story-box .bookmark:hover,
+.blog .container .blog-story-box .bookmark:focus,
+.blog .container .blog-story-box .bookmark:active{
+    background-color: #F4d35e;
+}
+/*footer*/
+footer{
+    background-color: black;
+    color:white;
+    padding: 100px 160px;
+}
+footer .nav-links{
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 200px;
+}
+footer .nav-links p{
+    color: #EFBE10;
+    font-size: 0.8rem;
+    font-weight: 700;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.4px;
+
+}
+footer .nav-links ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+footer .nav-links ul li a{
+    color: #FFF;
+    font-size: 0.8rem;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    text-decoration: none;
+    margin: 0;
+    
+}
+footer .bottom-line{
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+}
+footer .bottom-line .disclamer p{
+    font-size: 0.8rem;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+}
+footer .bottom-line .social-links{
+    color:white;
+}
+
+/* o dabar bandysim, kad musu projektas nesubyretu sumazinus :) */
+
+@media all and (max-width:1140px){
+    body{
+        font-size: 15px;
+    }
+    #blue-ice-cream{
+        position: absolute;
+        height: 400px;
+        width:334px;
+        left: 0px;;
+        bottom: 20px;
+    }
+    #chocolate-cone{
+        position: absolute;
+        width:180px;
+        height:330px;
+        top: -140px;
+        right: -5px;
+    }
+    #happy-girl{
+        position: absolute;
+        right: 20px;
+        top:-120px;
+        width:200px;
+        height: 500px;
+    }
+    .blog .container{
+        padding: 60px;
+    }
+    .blog .flex-container{
+        flex-wrap: wrap;
+    }
+    .about-us-text p { 
+        max-width: 500px;
+        margin: 10px;
+    }
+      
+    #people-img{
+        max-width: 490px;
+        max-height: 400px;
+        margin:0 20px 0 0;
+    }
+    .galery .iner-container-grid {
+        max-width: 100%;
+        grid-gap: 8px;
+        padding: 60px;
+        grid-auto-rows: auto;
+        grid-auto-flow: dense;
+     }
+     .top-header, header {
+        padding: 0 20px;
+        border:none;
+     }
+}
+@media all and (max-width:960px){
+    
+    header h1{
+        max-width: 700px;
+    }
+    .top-header, header {
+        padding: 0 20px;
+     }
+   
+     .galery .iner-container-grid{
+        grid-template-columns: repeat(2, 1fr);
+     }
+     .galery .iner-container-grid .img-big{
+        max-height: 500px;
+     }
+     .galery .iner-container-grid .img-medium, .galery .iner-container-grid .img-extra-small{
+        display:none;
+     }
+     
+    .ice-cream-box{
+        margin: 20px;
+    }
+    .ice-cream-box.fruit img{
+        max-height: 187px;
+    }
+    .ice-cream-box.chocolate{
+       display: none;
+    }
+    .coments .coment-box{
+        margin: 0 5px;
+    }
+    footer .nav-links{  
+        margin-right: 100px;
+    }
+}
+@media all and (max-width:720px){
+    header h1{
+        font-size: 5rem;
+       }
+       .top-header .logo .icon{
+        width:36px;
+        height:33px;
+    }
+    .top-header .logo p{
+        font-size: 1rem;
+    }
+
+       .iner-container-grid{
+        padding: 0 100px 30px 50px;
+    }  
+    #blue-ice-cream, #chocolate-cone, #happy-girl, #pink-cone{
+        display: none;
+    }
+    .galery .iner-container-grid .img-small{
+        max-width:230px;
+        max-height: 250px;
+        margin:0;
+    }
+     .galery .iner-container-grid .img-big{
+        max-width:260px;
+        max-height: 300px;
+        margin: 0;
+     }
+     .direction-sign{
+        width:50px;
+        height: 50px;
+        margin: 30px;
+
+    }
+     .ice-cream-box.fruit{
+        display: none;
+     }
+     #people-img{
+        max-width: 400px;
+        max-height: 300px;
+    }
+    .coments .coment-second{
+        display:none;
+    }
+    .blog .container .blog-story-box{
+        margin: 40px 25px;
+    }
+    footer .nav-links{
+        
+        margin-right: 20px;
+    }
+    
+}
+@media all and (max-width:540px){
+    body{
+        font-size: 7px;
+    }
+    .desktop {
+        display: none;
+    }
+    .mobile{
+        display: block;
+        position: relative;
+        width: 100%;
+    }
+    .mobile ul {
+        position: absolute;
+        width: 100%;
+        top: 10px;
+        left: 0;
+
+    }
+   /* .mobile .navbar li a {
+    font-size: 10px;
+   } */
+   /* .mobile .burger{
+    width: 20px;
+    height: 20px;
+   } */
+   header h1{
+    font-size: 3rem;
+   }
+   header #right-half{
+    
+        width: 100%; 
+   }
+   .galery{
+    display:none;
+   }
+   .about-us {
+    padding: 20px;
+   }
+   .about-us .flex-container {
+    display: flex;
+    flex-direction: column;
+   }
+   .about-us p{
+    font-size: 1rem;
+   }
+   .coments .coment-box{
+    max-width: 250px;
+    max-height: 300px;
+    padding: 20px;
+   }
+   .coments .coment-box img{
+    width:50px;
+    height: 50px;
+    border: none;
+    margin: 0 0 10px;
+
+}
+   .coments .coment-third{
+    display: none;
+   }
+   footer{
+    padding: 20px;
+   }
+   footer .container .bottom-line .disclamer p{
+    font-size: 9px;
+   }
+   footer .container .bottom-line .social-links .iconify {
+    width: 40px;
+    height: 40px;
+   }
+}

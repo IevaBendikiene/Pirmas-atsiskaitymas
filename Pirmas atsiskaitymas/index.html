@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice-cream webpage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700&family=Sigmar+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+<script src="https://code.iconify.design/2/2.0.0/iconify.min.js" ></script>
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <script>
+        function navi(){
+            let meniu = document.getElementById("mobile-nav");
+            if(meniu.style.display === 'block'){
+                meniu.style.display = 'none';
+            } else {
+               meniu.style.display = 'block';
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="top-header">
+        <div class="container flex-container">
+            <div class="logo flex-container">
+                <span class="iconify icon" data-icon="ph:ice-cream"></span>
+                <p>ICE+CREAM
+                   <span> & CO</span></p>
+            </div>
+            <nav class="desktop">
+                <ul class="navbar flex-container">
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">products</a></li>
+                    <li><a href="#">blog</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+        </nav>
+            <nav class ="mobile">
+                <ul class="navbar flex-container" id="mobile-nav">
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">products</a></li>
+                    <li><a href="#">blog</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+                <a class="burger" href="javascript:void(0);" class="icon" onclick="navi()"><iconify-icon icon="iconamoon:menu-burger-horizontal-light"></iconify-icon></a>
+            </nav>
+        </div>
+    </div>
+    <header>
+        <div id="right-half"></div>
+             <div class="container"><h1>Scoop up <span>happiness</span> with every bite.</h1></div>       
+    </header>
+    <div class="galery">
+        <div class="container">
+            <img id="blue-ice-cream" src="img/dekoracijos/blue-ice-cream.png" alt="melyni ledai">
+                <h2>Our Ice Creams</h2>
+                <div class="iner-container-grid">  
+                    <img class="img-small" src="img/unsplash_rEEvBPZf4CQ.png" alt="ledai">
+                    <img class="img-big" src="img/unsplash_rEEvBPZf4CQ (1).png" alt="ledai">
+                    <img class="img-extra-small" src="img/unsplash_rEEvBPZf4CQ (2).png" alt="ledai">  
+                    <img class="img-big" src="img/unsplash_rEEvBPZf4CQ (4).png" alt="ledai">
+                    <img class="img-big" src="img/unsplash_rEEvBPZf4CQ (3).png" alt="ledai">
+                    <img class="img-medium" src="img/unsplash_rEEvBPZf4CQ (5).png" alt="ledai">
+                </div>
+            
+        </div>
+    </div>
+    <section class="products">
+        <div class="container">
+         <h2>Our Products</h2>
+         <div class="ice-creams flex-container">
+            <img class="direction-sign" src="img/left.png" alt="left sign">
+            <div class="ice-cream-box vanila">
+                <img src="img/vanila.png" alt="ledai">
+                <h3>Vanilla ice cream</h3>
+                <hr>
+                <p>Creamy, sweet, and classic, it's a timeless favorite.</p>
+                <button class="btn-read">READ MORE</button>
+            </div>
+            <div class="ice-cream-box fruit">
+                <img src="img/fruit.png" alt="ledai">
+                <h3>Fruit sorbet</h3>
+                <hr>
+                <p>Refreshing and tangy, it bursts with natural fruit flavors.</p>
+                <button class="btn-read">READ MORE</button>
+            </div>
+            <div class="ice-cream-box chocolate">
+                <img src="img/chocolate.png" alt="ledai">
+                <h3>Chocolate gelato</h3>
+                <hr>
+                <p>Rich, indulgent, and oh-so-smooth, a chocoholic's dream.</p>
+                <button class="btn-read">READ MORE</button>
+            </div>
+            <img class="direction-sign" src="img/right.png" alt="right-sign">
+         </div>
+        </div>
+    </section>
+    <section class="about-us">
+        <div class="container flex-container">
+            <div class="abou-us-text">
+                <h2>About Us</h2>
+                <p>At ICE+CREAM & CO, were on a mission to 
+                    spread joy by crafting delicious, out-of-
+                    this-world ice cream experiences. Our 
+                    playful cartoon shop is the home of 
+                    scrumptious flavors, smiling faces, and 
+                    unending fun!
+                </p>
+            </div>
+            <div>
+                <img id="people-img" src="img/photo (3).png" alt="people chating">
+            </div>
+            <img  id="chocolate-cone" src="img/dekoracijos/chocolate-cone.png" alt="chocolate-ice-cream">
+        </div>
+    </section>
+    <section class="coments">
+        <div class="container flex-container">
+            <img class="direction-sign" src="img/left.png" alt="left-sign">
+            <div class="coment-box coment-first">
+                <img src="img/avatars/H3d4e23VRKzPNPFF2FyR80Ezc.jpg.png" alt="">
+                <p>The flavors are out of this 
+                    world! I can’t get enough.</p>
+                <p class="avatar-name">Samantha Jones</p></div>
+            <div class="coment-box coment-second">
+                <img src="img/avatars/H3d4e23VRKzPNPFF2FyR80Ezc.jpg (1).png" alt="">
+                <p>My kids love the cartoon 
+                    atmosphere, and I love 
+                    the taste.</p>
+                <p class="avatar-name">John Thompso</p></div>
+            <div class="coment-box coment-third">
+                <img src="img/avatars/H3d4e23VRKzPNPFF2FyR80Ezc.jpg (2).png" alt="">
+                <p>Their chocolate is the 
+                    best in town!</p>
+                <p class="avatar-name">Ava Johnson</p></div>
+            <img class="direction-sign" src="img/right.png" alt="right sign">
+            <img id="happy-girl" src="img/dekoracijos/happy-girl.png" alt="happy girl">
+        </div>
+    </section>
+    <section class="blog">
+        <div class="container">
+            <img id="pink-cone" src="img/dekoracijos/pink-cone.png" alt="pink-cone">
+           <div class="blog-main-part">
+        
+                <div class="blog-text-part">
+                    <h2>Blog</h2>
+                    <p>Stay up to date with our tasty adventures and learn 
+                        amazing ice cream facts from the experts at our 
+                        whimsical ice cream wonderland blog</p>
+                        
+                </div>        
+                <div class="flex-container">    
+                    <div class="blog-story-box story-one">
+                        <img src="img/Image (6).png" alt="ice-cream">
+                        <span class="iconify bookmark" data-icon="ph:bookmark-simple-fill"></span>
+                        <p>Scooping Up Happiness: Exploring the World of Artisanal Ice Cream</p>
+                    </div>
+                    <div class="blog-story-box story-two">
+                        <img src="img/Image (3).png" alt="ice-cream">
+                        <span class="iconify bookmark" data-icon="ph:bookmark-simple-fill"></span>
+                        <p>Chill Out with Cool Creations: Innovative Ice Cream Flavors and Recipes</p>
+                    </div>
+                    <div class="blog-story-box story-three">
+                        <img src="img/Image (4).png" alt="ice-cream">
+                        <span class="iconify bookmark" data-icon="ph:bookmark-simple-fill"></span>
+                        <p>The Science of Ice Cream: A Deep Dive into Creamy Concoctions</p>
+                    </div>
+                    <div class="blog-story-box story-four">
+                        <img src="img/Image (5).png" alt="ice-cream">
+                        <span class="iconify bookmark" data-icon="ph:bookmark-simple-fill"></span>
+                        <p>The Science of Ice Cream: A Deep Dive into Creamy Concoctions</p>
+                    </div>  
+                </div>    
+             </div>      
+        </div>
+    </section>
+    <footer>
+        <div class="container ">
+            <div class="flex-container nav-links">
+                <div class="links-list">
+                    <p>Links</p>
+                    <ul>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="info-list">
+                    <p>Info</p>    
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="concect-list">   
+                    <p>Connect</p>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">TikTok</a></li>
+                    </ul>
+                </div>
+            </div> 
+            <div class="flex-container bottom-line"> 
+                <div class="disclamer">
+                    <p>© 2023 ICE+CREAM&CO. All rights reserved.</p>
+                </div>
+                <div class="social-links">
+                    <span class="iconify" data-icon="ph:facebook-logo"></span>
+                    <span class="iconify" data-icon="ph:instagram-logo"></span>
+                    <span class="iconify" data-icon="ph:tiktok-logo"></span>
+                </div>
+            </div>       
+        </div>    
+    </footer>  
+</body>
+</html>
+
+<!---->
